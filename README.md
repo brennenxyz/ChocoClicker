@@ -1,4 +1,5 @@
 # ChocoClicker
+Made in 5 minutes lol
 
 ## How To Install
 Download the repo as a .zip
