@@ -1,3 +1,6 @@
+import Settings from "./config";
+
+
 let prefix = "§l§4[§l§cChocoClicker§l§4]§b "
 
 let d = 75;
@@ -9,6 +12,8 @@ let slowed = false;
 
 let enabled = false;
 let realClicks = 0;
+
+register("command", () => Settings.openGUI()).setName("chococlickersettings")
 
 register("command", () => {
     enabled = !enabled

@@ -1,6 +1,7 @@
 {
   "name": "ChocoClicker",
-  "creator": "Brennen",
+  "creator": "brennen, omak2r3a",
   "entry": "index.js",
-  "version": "0.0.1"
+  "version": "0.0.2",
+  "requires": ["Vigilance"]
 }
