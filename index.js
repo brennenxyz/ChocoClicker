@@ -32,6 +32,7 @@ register("step", () => {
     
     if(clickme !== -1) {
         Player.getContainer().click(clickme, false, ClickAction.ClickType.RIGHT)
+        onDelay = false;
         return;
     }
 
