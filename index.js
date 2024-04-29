@@ -1,34 +1,16 @@
 import Settings from "./config";
 
-
 let prefix = "§l§4[§l§cChocoClicker§l§4]§b "
-
-let d = 75;
 let delayMultiplier = 1;
-
 let onDelay = false;
 let clicks = 0;
 let slowed = false;
-
-let enabled = false;
 let realClicks = 0;
 
-register("command", () => Settings.openGUI()).setName("chococlickersettings")
-
-register("command", () => {
-    enabled = !enabled
-    ChatLib.chat(prefix + "Status: " + enabled)
-}).setName("chococlicker")
-
-register("command", (arg1) => {
-    if(!arg1) return ChatLib.chat(prefix + "Invalid Syntax!");
-    if(!parseInt(arg1)) return ChatLib.chat(prefix + "Invalid Syntax!");
-    else d = parseInt(arg1)
-    ChatLib.chat(new Message(new TextComponent(prefix + "New Delay: " + arg1 + "ms/click")))
-}).setName("setchocodelay")
+register("command", () => Settings.openGUI()).setName("chococlicker")
 
 register("step", () => {
-    if(!enabled) return;
+    if(!Settings.enabled) return;
     if(!Player?.getContainer().getName().toLowerCase().includes("chocolate factory")) return;
     if(onDelay) return;
     onDelay = true;
@@ -63,5 +45,5 @@ register("step", () => {
 
     setTimeout(() => {
         onDelay = false;
-    }, d*delayMultiplier+(Math.floor(Math.random() * 10) + 1));
+    }, Settings.delay*delayMultiplier+(Math.floor(Math.random() * 10) + 1));
 })
