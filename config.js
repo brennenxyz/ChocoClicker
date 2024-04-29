@@ -7,6 +7,13 @@ import {
 @Vigilant('ChocoClicker')
 class Settings {
     @SwitchProperty({
+        name: "Toggle",
+        description: "Turn it on and off",
+        category: "General"
+    })
+    enabled = false;
+
+    @SwitchProperty({
         name: "Auto Upgrade Employees",
         description: "Will automatically update employees when you have enough money",
         category: "General"
