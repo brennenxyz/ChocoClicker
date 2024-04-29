@@ -8,9 +8,9 @@ Extract the .zip into the modules folder
 Go back into the game and /ct load
 
 ## Commands
-/setchocodelay 1000 | sets click delay IN MILLISECONDS
-
-/chococlicker | turns it on and off 
+~~/setchocodelay 1000 | sets click delay IN MILLISECONDS~~
+~~/chococlicker | turns it on and off~~
+DEPRECIATED: Use The GUI! /chococlicker
 
 ## To-do list (as of 04/28/2024):
 - auto upgrade best upgrade
