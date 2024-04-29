@@ -9,6 +9,7 @@ Go back into the game and /ct load
 
 ## Commands
 /setchocodelay 1000 | sets click delay IN MILLISECONDS
+
 /chococlicker | turns it on and off 
 
 ## To-do list (as of 04/28/2024):
