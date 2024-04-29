@@ -7,5 +7,10 @@ Run /ct files ingame with ChatTriggers installed and go into the "modules" folde
 Extract the .zip into the modules folder
 Go back into the game and /ct load
 
-## How to change Click Delay (in ms)
-/setchocodelay 1000
+## Commands
+/setchocodelay 1000 | sets click delay IN MILLISECONDS
+/chococlicker | turns it on and off 
+
+## To-do list (as of 04/28/2024):
+- auto upgrade best upgrade
+- gui
